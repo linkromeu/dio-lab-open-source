@@ -79,17 +79,26 @@ Após criar o seu Pull Request, nossa automação irá validar a sua submissão.
     
 ## Convenção de Commits 
 
-| Tipo de Commit |Descrição                                                            | Exemplo
-| ---------------|----------------------------------------------------------------------|-----------
-| `feat`         | Adiciona uma nova funcionalidade ao projeto.                         | `feat: add USENAME.md profile`
-| `fix`          | Corrige um bug ou problema no projeto.                               | `fix: fixed issue fix#IssueNumber`
-| `docs`         | Altera a documentação do projeto.| `docs: update README.md`
-| `style`        | Realiza mudanças na aparência, sem alterar a funcionalidade.         | `style: add EFFECTNAME to COMPONENT`
-| `refactor`     | Realiza mudanças no código que não alteram a funcionalidade.         | `refactor: refactor at CLASSNAME`
-| `test`         | Adiciona ou modifica testes no projeto.                              | `test: add unit test for UserService`
+| **Tipo de Commit** | **Descrição**                                                                                                 | **Exemplo de Uso**                                                                                           |
+|--------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| `feat`             | Usado para indicar a adição de uma nova funcionalidade ou recurso ao projeto.                                  | `feat: adicionar suporte a múltiplos idiomas no sistema`                                                      |
+| `fix`              | Utilizado para corrigir um bug ou erro existente no código.                                                    | `fix: corrigir erro de cálculo na função de conversão de moedas`                                              |
+| `docs`             | Refere-se a mudanças na documentação, como README, manuais de usuário ou qualquer arquivo de documentação.      | `docs: atualizar guia de instalação para novos ambientes`                                                     |
+| `style`            | Usado para mudanças que afetam a formatação, estilo de código, sem modificar a lógica (e.g., espaços, vírgulas).| `style: ajustar indentação de código no arquivo principal`                                                    |
+| `refactor`         | Refere-se a mudanças no código que melhoram a estrutura ou organização, sem alterar comportamento funcional.    | `refactor: reorganizar funções em módulos independentes`                                                      |
+| `test`             | Usado para adição ou modificação de testes existentes, sem alterar o código de produção.                       | `test: adicionar testes unitários para o módulo de autenticação`                                              |
+| `chore`            | Commit de tarefas administrativas ou de manutenção que não impactam diretamente o código-fonte.                | `chore: atualizar dependências de pacotes do projeto`                                                         |
+| `ci`               | Refere-se a alterações nos scripts de integração contínua (CI) ou configuração de ferramentas de build.        | `ci: configurar integração contínua para execução de testes automatizados`                                    |
+| `perf`             | Usado para alterações no código que melhoram o desempenho sem mudar o comportamento funcional.                 | `perf: otimizar a função de busca para reduzir o tempo de resposta`                                           |
+| `build`            | Commit relacionado à configuração de build ou dependências externas (e.g., compilar, ferramentas).             | `build: atualizar versão do compilador no ambiente de produção`                                               |
+| `revert`           | Usado para reverter um commit anterior.                                                                       | `revert: reverter commit fe290cd que causava quebra no sistema de login`                                      |
+| `ci`               | Alterações relacionadas à integração contínua, ferramentas de automação de build ou configuração de pipeline.  | `ci: configurar GitHub Actions para testes automatizados em múltiplos ambientes`                              |
+
 
 
 ## Referências
 - [ANGULAR. Contributing to Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md)
 - [CONVENTIONAL COMMITS. Summary](https://www.conventionalcommits.org/en/v1.0.0/)
 - [GITHUB. Configurar diretrizes para os contribuidores do repositório](https://docs.github.com/pt/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors)
+- [SemVer (Semantic Versioning)](https://semver.org/)
+- [Git Commit (Message Guidelines)](https://chris.beams.io/posts/git-commit/)
